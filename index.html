@@ -9,29 +9,54 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
-            background: linear-gradient(to left , #0b4203, #357535); 
-            color: white;
+            background: linear-gradient(to left, #18e718, #162219); /* Gradiente de verde para preto */
+            color: white; /* Torna o texto branco para melhor contraste */
         }
-        a {
-            display: block;
-            margin: 20px;
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            padding: 10px 20px;
             font-size: 20px;
-            text-decoration: none;
             color: white;
-            background-color: #4CAF50;
-            padding: 10px;
+            text-decoration: none;
             border-radius: 5px;
+            width: 250px;
         }
-        a:hover {
-            background-color: #45a049;
+        .button img {
+            margin-right: 10px;
+        }
+        .youtube {
+            background-color: #FF0000; /* Vermelho do YouTube */
+        }
+        .instagram {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); /* Gradiente do Instagram */
+        }
+        .facebook {
+            background-color: #3b5998; /* Azul do Facebook */
+        }
+        .image {
+            background-color: #4CAF50; /* Verde padrão para imagem */
+        }
+        .button:hover {
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
-    <h1>IASD de Caracas City</h1>
-    <a href="https://www.youtube.com/channel/UCY7XXSCeMRXbLAB9z1F07fw" target="_blank">YouTube</a>
-    <a href="instagram://user?username=iasdcentralcarapicuiba" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/IasdCentralCarapicuiba" target="_blank">Facebook</a>
-    <a href="https://equipedacomunicacao.github.io/logo-comunicacao54.jpeg" target="_blank">logo</a>
+    <h1>IASD Carapicuiba</h1>
+    <a href="https://www.youtube.com/channel/UCY7XXSCeMRXbLAB9z1F07fw" target="_blank" class="button youtube">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" width="24"> YouTube
+    </a>
+    <a href="instagram://user?username=iasdcentralcarapicuiba" target="_blank" class="button instagram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="24"> Instagram
+    </a>
+    <a href="https://www.facebook.com/IasdCentralCarapicuiba" target="_blank" class="button facebook">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="24"> Facebook
+    </a>
+    <a href="https://equipedacomunicacao.github.io/logo-comunicacao54.jpeg" target="_blank" class="button image">
+         Convite
+    </a>
 </body>
 </html>
