@@ -12,6 +12,7 @@
             background: linear-gradient(to left, #18e718, #162219); /* Gradiente de verde para preto */
             color: white; /* Torna o texto branco para melhor contraste */
             margin: 0;
+            cursor: pointer; /* Muda o cursor para indicar que a área é clicável */
         }
         .button {
             display: flex;
@@ -46,7 +47,7 @@
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            function requestFullScreen() {
+            document.body.addEventListener("click", function() {
                 if (document.documentElement.requestFullscreen) {
                     document.documentElement.requestFullscreen();
                 } else if (document.documentElement.webkitRequestFullscreen) { /* Safari */
@@ -54,10 +55,7 @@
                 } else if (document.documentElement.msRequestFullscreen) { /* IE11 */
                     document.documentElement.msRequestFullscreen();
                 }
-            }
-
-            // Solicitar tela cheia após um pequeno atraso para garantir que o documento está pronto
-            setTimeout(requestFullScreen, 1000);
+            });
         });
     </script>
 </head>
