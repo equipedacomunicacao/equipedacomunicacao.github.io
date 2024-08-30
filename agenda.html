@@ -53,13 +53,18 @@
 
         modalImg.onclick = function() {
             if (modalImg.src.includes("agenda-padrao-v4.png")) {
-
-                modalImg.src = "https://equipedacomunicacao.github.io/midias/images/agenda-setembro24-v4.png";
-
+                window.location.href = "agenda.html?image=agenda-setembro24-v4";
             } else {
+                window.location.href = "index.html";
+            }
+        }
 
-                window.open('https://equipedacomunicacao.github.io/midias/images/agenda-setembro24-v4.png', '_blank');
-
+        // Verifica se a URL contém o parâmetro de imagem e altera a imagem inicial
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const imageParam = urlParams.get('image');
+            if (imageParam === "agenda-setembro24-v4") {
+                modalImg.src = "https://equipedacomunicacao.github.io/midias/images/agenda-setembro24-v4.png";
             }
         }
     </script>
