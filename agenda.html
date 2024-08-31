@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta name="google-site-verification" content="k0cgjIOfH1T79kvH6OlFndCtwtNQZeM1_xVtX7o4054" />
@@ -29,8 +30,11 @@
             object-fit: contain;
         }
         .indicator {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
             text-align: center;
-            margin: 20px 0;
             font-size: 16px;
             color: #fff;
         }
@@ -60,10 +64,11 @@
 </head>
 <body>
     <div id="agendaModal" class="modal">
-        <img id="agendaImage" class="modal-content" src="https://equipedacomunicacao.github.io/midias/images/agenda-padrao-v4.png" alt="Agenda Padrão">
-        <div class="indicator">
-            <p>Role para ver mais</p>
-            <img src="https://equipedacomunicacao.github.io/midias/icons/seta-baixo-v1.png" alt="Seta para baixo">
+        <div style="position: relative;">
+            <img id="agendaImage" class="modal-content" src="https://equipedacomunicacao.github.io/midias/images/agenda-padrao-v4.png" alt="Agenda Padrão">
+            <div class="indicator">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Arrow_down_font_awesome.svg" alt="Seta para baixo">
+            </div>
         </div>
         <img id="agendaImage2" class="modal-content" src="https://equipedacomunicacao.github.io/midias/images/agenda-setembro24-v4.png" alt="Agenda Setembro 2024">
     </div>
