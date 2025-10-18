@@ -4,71 +4,101 @@
     <meta name="google-site-verification" content="k0cgjIOfH1T79kvH6OlFndCtwtNQZeM1_xVtX7o4054" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IASD Carapicuiba</title>
+    <title>IASD Central Carapicuíba</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            background: linear-gradient(to left, #18e718, #162219); 
-            color: white; 
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(160deg, #add8e6, #dda0dd, #ffb6c1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
         }
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #4a004a; /* título escurecido */
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
         .button {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
+            gap: 10px;
+            width: 280px;
+            padding: 14px 18px;
             margin: 10px 0;
-            padding: 10px 20px;
-            font-size: 20px;
-            color: white;
+            border-radius: 50px;
             text-decoration: none;
-            border-radius: 5px;
-            width: 250px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.25);
         }
         .button img {
-            margin-right: 10px;
+            width: 28px;
+            height: 28px;
         }
+
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+        }
+
         .youtube {
-            background-color: #FF0000; 
+            background: #FF0000;
         }
+
         .instagram {
             background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
         }
+
         .facebook {
-            background-color: #3b5998; 
+            background: #1877F2;
         }
+
         .serveme {
-            background-color: #ffffff; 
-            color: rgb(5, 30, 77);
+            background: #ffffff;
+            color: #051e4d;
         }
+
         .agenda {
-            background-color: #40256b; 
-            color: #ffffff;
+            background: linear-gradient(135deg, #4b0082, #6a0dad);
         }
+
         .licaomana {
-            background-color: #2010ad;
-            color: #ffffff;
+            background: #2010ad;
         }
-        .button:hover {
-            opacity: 0.9;
+
+        @media (max-width: 480px) {
+            .button {
+                width: 80%;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>IASD Carapicuiba</h1>
+    <h1>IASD CENTRAL CARAPICUÍBA</h1>
+
     <a href="https://www.youtube.com/channel/UCY7XXSCeMRXbLAB9z1F07fw" target="_blank" class="button youtube">
         <img src="https://equipedacomunicacao.github.io/midias/icons/YouTube_icon_.png" alt="YouTube" width="24"> YouTube
     </a>
     <a href="instagram://user?username=iasdcentralcarapicuiba" target="_blank" class="button instagram">
         <img src="https://equipedacomunicacao.github.io/midias/icons/Instagram_icon.png" alt="Instagram" width="24"> Instagram
     </a>
-    <a href="https://m.facebook.com/IasdCentralCarapicuiba" target="_blank" class="button facebook">
+    <a href="https://www.facebook.com/IasdCentralCarapicuiba" target="_blank" class="button facebook">
         <img src="https://equipedacomunicacao.github.io/midias/icons/facebook-icon.png" alt="Facebook" width="24"> Facebook
     </a>
     <a href="https://giving.7me.app/login" target="_blank" class="button serveme">
